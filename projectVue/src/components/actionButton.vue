@@ -1,18 +1,41 @@
 <template>
-<button :class="{ primary:true}">{{ text }}</button>
+<button :class="buttonClass">
+    {{ text }}</button>
 </template>
 
 <script lang="ts">
 export default {
     name: "ActionButton",
-    props:['text']
+    props: {
+        text: {
+            type: String,
+            required: true,
+        },
+        type: {
+            type: String,
+            required: false,
+            default: "primary",
+            validator(value:any) {
+                return ['primary'].includes(value)
+            }
+        }
+    },
+    computed: {
+        buttonClass() {
+            return {
+                [this.type]: true,
+            }
+        }
+    }
 }
 </script>
+
 <style scoped>
-    button{
-        @apply rounded px-5 py-3 font-medium
-    };
-    .primary{
-        @apply border-0 bg-brand-blue-1 text-white hover:shadow-blue;
-    }
-</style> 
+button {
+    @apply rounded px-5 py-3 font-medium 
+}
+
+.primary {
+    @apply border-0 bg-brand-blue-1 text-white hover:shadow-blue;
+}
+</style>
