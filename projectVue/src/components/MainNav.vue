@@ -1,6 +1,13 @@
 <script lang="ts">
+import ActionButton from './actionButton.vue';
+import ProfileImage from './profileImage.vue';
 export default {
     name: "MainNav",
+    components: {
+    ActionButton,
+    ProfileImage
+},
+
     data: () => {
         return {
             company: "Thản Trần",
@@ -11,7 +18,8 @@ export default {
                 "Hỏi gì không",
                 "Students",
                 "Jobs"
-            ]
+            ],
+            isLoggedIn:false
         }
     }
 }
@@ -24,17 +32,18 @@ export default {
             <a v-bind:href="url" class="flex h-full items-center text-2xl">{{ company }}</a>
             <nav class="ml-12 h-full">
                 <ul class="flex h-full list-none">
-                    <li class="ml-9 h-full first:ml-0"
-                     v-for="menuItem  of menuItems" 
-                     :key="menuItem"
-                     
-                     >
+                    <li class="ml-9 h-full first:ml-0" v-for="menuItem  of menuItems" :key="menuItem">
                         <a href="" class="flex h-full items-center py-2.5 ">{{ menuItem }}</a>
                     </li>
 
                 </ul>
             </nav>
+            <div class="ml-auto flex h-full items-center">
+                <ProfileImage  v-if="isLoggedIn" />
+                <ActionButton v-else=''/>
+            </div>
         </div>
+
     </div>
 </header>
 </template>
