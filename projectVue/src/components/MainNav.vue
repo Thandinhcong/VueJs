@@ -11,7 +11,7 @@ export default {
     data: () => {
         return {
             company: "Thản Trần",
-            url: "https://careers.google.com",
+            url: "https://thandvcv17.vercel.app",
             menuItems: [
                 "Teams",
                 "Localtion",
@@ -20,6 +20,11 @@ export default {
                 "Jobs"
             ],
             isLoggedIn:false
+        }
+    },
+    methods:{
+        loginUser(){
+            this.isLoggedIn=true;
         }
     }
 }
@@ -40,7 +45,7 @@ export default {
             </nav>
             <div class="ml-auto flex h-full items-center">
                 <ProfileImage  v-if="isLoggedIn" />
-                <ActionButton v-else=''/>
+                <ActionButton v-else text="Sign in" @click="loginUser"/>
             </div>
         </div>
 
