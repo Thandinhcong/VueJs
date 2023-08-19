@@ -1,8 +1,8 @@
 <template>
-<section>
+<section class="mb-16">
     <h1 class="mb-14 text-8xl font-bold tracking-tighter">
         <span :class="actionClass">
-            {{ actions }}
+            {{ action }}
         </span>
         <br>
         for everyone</h1>
@@ -11,18 +11,19 @@
 </template>
 
 <script lang="ts">
+import nextElementInList from '../utils/nextElementInList';
 export default {
     name: "TheHeadline",
     data() {
         return {
-            actions: "Build",
+            action: "Build",
             interval: null as any,
         }
     },
     computed: {
         actionClass() {
             return {
-                [this.actions.toLowerCase()]:true // true
+                [this.action.toLowerCase()]:true // true
             }
         }
     },
@@ -36,10 +37,7 @@ export default {
         changeTitle() {
             this.interval = setInterval(() => {
                 const actions = ['Build', 'Create', 'Design', 'Code'];
-                const currentActionIndex = actions.indexOf(this.actions);
-                const nextActionIndex = (currentActionIndex + 1) % 4;
-                const nextAction = actions[nextActionIndex]
-                this.actions = nextAction
+                this.action=nextElementInList(actions,this.action)
             }, 2000)
         }
     }
