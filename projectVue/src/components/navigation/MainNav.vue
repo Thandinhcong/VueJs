@@ -1,5 +1,5 @@
 <script lang="ts">
-import ActionButton from '../actionButton.vue';
+import ActionButton from '../Shared/actionButton.vue';
 import ProfileImage from './profileImage.vue';
 import TheSubNav from './theSubNav.vue';
 export default {
