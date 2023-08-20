@@ -12,25 +12,23 @@ export default {
 
     data: () => {
         return {
-            company: "Thản Trần",
-            url: "https://thandvcv17.vercel.app",
             menuItems: [
-                "Teams",
-                "Localtion",
-                "Hỏi gì không",
-                "Students",
-                "Jobs"
+                { text: "Teams", url: "/" },
+                { text: "Location", url: "/" },
+                { text: "By me", url: "/" },
+                { text: "Students", url: "/" },
+                { text: "Jobs", url: "/jobs/results" },
             ],
             isLoggedIn: false
         }
     },
-    computed:{
-headerHeightClass(){
-    return {
-        "h-16":!this.isLoggedIn,// true
-        "h-32":this.isLoggedIn // false
-    }
-}
+    computed: {
+        headerHeightClass() {
+            return {
+                "h-16": !this.isLoggedIn,// true
+                "h-32": this.isLoggedIn // false
+            }
+        }
     },
     methods: {
         loginUser() {
@@ -41,25 +39,26 @@ headerHeightClass(){
 </script>
 
 <template>
-<header :class="['w-full','text-sm',headerHeightClass]">
-    <div class="fixed left-0 top-0  w-full h-16 bg-white
+    <header :class="['w-full', 'text-sm', headerHeightClass]">
+        <div class="fixed left-0 top-0  w-full h-16 bg-white
     ">
-        <div class="flex flex-nowrap h-full border-b border-solid border-brand-gray-100 px-8">
-            <a v-bind:href="url" class="flex h-full items-center text-2xl">{{ company }}</a>
-            <nav class="ml-12 h-full">
-                <ul class="flex h-full list-none">
-                    <li class="ml-9 h-full first:ml-0" v-for="menuItem  of menuItems" :key="menuItem">
-                        <a href="" class="flex h-full items-center py-2.5 ">{{ menuItem }}</a>
-                    </li>
+            <div class="flex flex-nowrap h-full border-b border-solid border-brand-gray-100 px-8">
+                <router-link :to="{ name: 'Home' }" class="flex h-full items-center text-2xl">Thản Trần</router-link>
+                <nav class="ml-12 h-full">
+                    <ul class="flex h-full list-none">
+                        <li class="ml-9 h-full first:ml-0" v-for=" menuItem   of  menuItems " :key="menuItem.text">
+                            <router-link :to="menuItem.url" class="flex h-full items-center py-2.5 ">{{ menuItem.text
+                            }}</router-link>
+                        </li>
 
-                </ul>
-            </nav>
-            <div class="ml-auto flex h-full items-center">
-                <ProfileImage v-if="isLoggedIn" />
-                <ActionButton v-else text="Sign in" @click="loginUser" type="primary" />
+                    </ul>
+                </nav>
+                <div class="ml-auto flex h-full items-center">
+                    <ProfileImage v-if="isLoggedIn" />
+                    <ActionButton v-else text="Sign in" @click="loginUser" type="primary" />
+                </div>
             </div>
+            <TheSubNav v-if="isLoggedIn" />
         </div>
-        <TheSubNav v-if="isLoggedIn" />
-    </div>
-</header>
+    </header>
 </template>
