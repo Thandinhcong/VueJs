@@ -4,14 +4,14 @@
     <div class="flex flex-1 flex-nowrap h-full text-base font-light">
       <div class="relative flex h-full flex-1 items-center pr-3">
         <label class="absolute left-0 -top-10">Role</label>
-        <text-input placeholder="Software engineer" @handle-input="updateRole" />
+        <text-input placeholder="Software engineer" v-model="role" />
       </div>
       <span class="flex items-center h-full border-l border-r border-brand-gray-3 bg-brand-gray-2 px-3">
         in
       </span>
       <div class="relative flex h-full flex-1 items-center pl-3">
         <label class="absolute left-0 -top-10">Where?</label>
-        <text-input placeholder="Los Angeles" @handle-input="updateLocation" />
+        <text-input placeholder="Los Angeles" v-model="localtion" />
       </div>
 
     </div>
@@ -34,14 +34,6 @@ export default {
       localtion: "",
     };
   },
-  methods: {
-    updateRole(payload: any) {
-      console.log(payload);
-      this.role = payload
-    },
-    updateLocation(payload: any) {
-      this.localtion = payload
-    }
-  }
+
 };
 </script>
