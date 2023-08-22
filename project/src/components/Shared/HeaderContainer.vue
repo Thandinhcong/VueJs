@@ -1,0 +1,15 @@
+<template>
+  <div class="w-full border-b border-solid border-brand-gray-1">
+    <div class="mx-auto my-16 text-center">
+      <slot>Sample title </slot>
+      <slot name="subtitle"> Sample title</slot>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  name: "HeaderContainer",
+};
+</script>
+
