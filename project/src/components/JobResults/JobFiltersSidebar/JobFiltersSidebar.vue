@@ -11,23 +11,33 @@
       </div>
       <job-types />
       <Organizations />
+      <check-box-group
+        header="Job Types"
+        :unique-values="UNIQUE_JOB_TYPES"
+        :action="userStore.ADD_SELECTED_JOB_TYPES"
+      />
+      <check-box-group
+        header="Organizations"
+        :unique-values="UNIQUE_ORGANIZATIONS"
+        :action="userStore.ADD_SELECTED_ORGANIZATIONS"
+      />
     </section>
   </div>
 </template>
 
-<script>
+<script setup>
+import { computed } from "vue";
+
 import ActionButton from "@/components/Shared/ActionButton.vue";
 import CollapsibleAccordion from "@/components/Shared/CollapsibleAccordion.vue";
-import Organizations from "./Organizations.vue";
-import JobTypes from "./JobTypes.vue";
+import CheckBoxGroup from "@/components/JobResults/JobFiltersSidebar/CheckBoxGroup.vue";
 
-export default {
-  name: "JobFiltersSidebar",
-  components: {
-    ActionButton,
-    CollapsibleAccordion,
-    Organizations,
-    JobTypes,
-  },
-};
+import { useJobsStore } from "@/stores/job";
+import { useUserStore } from "@/stores/user";
+
+const jobsStore = useJobsStore();
+const UNIQUE_ORGANIZATIONS = computed(() => jobsStore.UNIQUE_ORGANIZATIONS);
+const UNIQUE_JOB_TYPES = computed(() => jobsStore.UNIQUE_JOB_TYPES);
+
+const userStore = useUserStore();
 </script>
