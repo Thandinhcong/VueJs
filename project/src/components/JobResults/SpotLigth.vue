@@ -23,20 +23,6 @@ const getSpotLigths = async () => {
   spotligths.value = response.data;
 };
 onMounted(getSpotLigths);
-// export default {
-//   name: "SpotLigth",
-//   data() {
-//     return {
-//       spotligths: [],
-//     };
-//   },
-//   async mounted() {
-//     const baseUrl = import.meta.env.VITE_APP_API_URL;
-//     const url = `${baseUrl}/spotlights`;
-//     const response = await axios.get(url);
-//     this.spotligths = response.data;
-//   },
-// };
 </script>
 
 <style>
