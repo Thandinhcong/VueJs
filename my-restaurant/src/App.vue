@@ -1,6 +1,9 @@
 <script setup>
+import HomeView from "./pages/HomePage/HomeView.vue";
 </script>
 
 <template>
-  <div>helloi</div>
+  <div>
+    <home-view />
+  </div>
 </template>
