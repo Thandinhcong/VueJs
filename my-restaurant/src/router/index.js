@@ -1,7 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeVue from "../pages/HomePage/HomeView.vue"
+import HomeVue from "../pages/HomePage/HomeView.vue";
+import AboutPage from "../pages/AboutPage/AboutPage.vue"
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHistory(),
   routes: [
     {
       path: '/',
@@ -11,8 +12,13 @@ const router = createRouter({
     {
       path: '/about',
       name: 'about',
+      component: AboutPage
     }
   ]
+  ,
+  scrollBehavior() {
+    return { top: 0, left: 0, behavior: "smooth" }
+  }
 })
 
 export default router
