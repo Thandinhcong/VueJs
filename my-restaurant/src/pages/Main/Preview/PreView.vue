@@ -15,6 +15,7 @@
           <div class="grid grid-cols-2 mt-3 gap-3 mr-2">
             <div class="flex">
               <img
+                class="w-14"
                 src="https://res.cloudinary.com/dxzlnojyv/image/upload/v1694404673/cooker_sngbdk.png"
                 alt=""
               />
@@ -22,6 +23,7 @@
             </div>
             <div class="flex mr-2">
               <img
+                class="w-14 mr-2"
                 src="https://res.cloudinary.com/dxzlnojyv/image/upload/v1694404672/chef_rtayw7.png"
                 alt=""
               />
@@ -29,6 +31,7 @@
             </div>
             <div class="flex mt-3 mr-2">
               <img
+                class="w-14 mr-2"
                 src="https://res.cloudinary.com/dxzlnojyv/image/upload/v1694404673/cooker_sngbdk.png"
                 alt=""
               />
@@ -36,6 +39,7 @@
             </div>
             <div class="flex mt-3 mr-2">
               <img
+                class="w-14 mr-2"
                 src="https://res.cloudinary.com/dxzlnojyv/image/upload/v1694404673/cooker_sngbdk.png"
                 alt=""
               />

@@ -1,8 +1,8 @@
 <template>
-  <a
-    href="Order Online"
+  <router-link
+    to="Order Online"
     class="flex items-center border border-opacity-50 rounded-xl p-4 px-10 text-slate-400 hover:bg-orange-300 hover:text-white"
-    >Order Online</a
+    >Order Online</router-link
   >
 </template>
 <script setup>
