@@ -2,7 +2,7 @@
 
 <template>
   <div>
-    <div class="text-center">
+    <div class="text-center group-[]:">
       <p class="text-orange-500 text-xl my-10">Our Offerd Menu</p>
       <h2 class="text-5xl mx-auto w-3/6 text-center">
         Some Trendy And Popular Courses Offerd
@@ -16,10 +16,96 @@
         <li class=""><router-link to="">Dinner</router-link></li>
       </ul>
     </nav>
-    <div>
+    <div class="flex">
+      <!-- 1 -->
+      <div class="relative group w-full h-auto">
+        <img
+          src="https://res.cloudinary.com/dxzlnojyv/image/upload/v1694406593/gallery1_ads6fs.png"
+          alt=""
+          class="w-full h-[548px] group-hover:opacity-80"
+        />
+
+        <div
+          class="absolute inset-0 flex flex-col items-center justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+        >
+          <p class="text-2xl text-orange-500">$255</p>
+          <h2 class="text-4xl my-5">Delicious Food</h2>
+          <p class="mb-10">Ut enim ad minim veniam quis nostr.</p>
+          <router-link
+            to=""
+            class="px-10 py-4 rounded-lg border border-solid border-orange-500 hover:bg-orange-500 hover:text-white"
+          >
+            Đặt ngay
+          </router-link>
+        </div>
+      </div>
+      <!-- 2 -->
+      <div class="relative group w-full h-auto">
+        <img
+          src="https://res.cloudinary.com/dxzlnojyv/image/upload/v1694406593/gallery2_jnn56c.png"
+          alt=""
+          class="w-full h-[548px] group-hover:opacity-80"
+        />
+
+        <div
+          class="absolute inset-0 flex flex-col items-center justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+        >
+          <p class="text-2xl text-orange-500">$255</p>
+          <h2 class="text-4xl my-5">Delicious Food</h2>
+          <p class="mb-10">Ut enim ad minim veniam quis nostr.</p>
+          <router-link
+            to=""
+            class="px-10 py-4 rounded-lg border border-solid border-orange-500 hover:bg-orange-500 hover:text-white"
+          >
+            Đặt ngay
+          </router-link>
+        </div>
+      </div>
+      <!-- 3 -->
       <div>
-        <img src="" alt="" />
-        <div></div>
+        <div class="relative group w-full h-auto">
+          <img
+            src="https://res.cloudinary.com/dxzlnojyv/image/upload/v1694406593/gallery1_ads6fs.png"
+            alt=""
+            class="w-full h-auto group-hover:opacity-80"
+          />
+
+          <div
+            class="absolute inset-0 flex flex-col items-center justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+          >
+            <p class="text-2xl text-orange-500">$255</p>
+            <h2 class="text-4xl my-5">Delicious Food</h2>
+            <p class="mb-10">Ut enim ad minim veniam quis nostr.</p>
+            <router-link
+              to=""
+              class="px-10 py-4 rounded-lg border border-solid border-orange-500 hover:bg-orange-500 hover:text-white"
+            >
+              Đặt ngay
+            </router-link>
+          </div>
+        </div>
+        <!-- 4 -->
+        <div class="relative group w-full h-auto">
+          <img
+            src="https://res.cloudinary.com/dxzlnojyv/image/upload/v1694406593/gallery4_wfeoow.png"
+            alt=""
+            class="w-full h-[270px] group-hover:opacity-80"
+          />
+
+          <div
+            class="absolute inset-0 flex flex-col items-center justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+          >
+            <p class="text-2xl text-orange-500">$255</p>
+            <h2 class="text-4xl my-5">Delicious Food</h2>
+            <p class="mb-10">Ut enim ad minim veniam quis nostr.</p>
+            <router-link
+              to=""
+              class="px-10 py-4 rounded-lg border border-solid border-orange-500 hover:bg-orange-500 hover:text-white"
+            >
+              Đặt ngay
+            </router-link>
+          </div>
+        </div>
       </div>
     </div>
   </div>
