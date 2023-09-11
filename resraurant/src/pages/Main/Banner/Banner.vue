@@ -21,7 +21,7 @@
       </div>
     </div>
     <img
-      class="w-100% z-10 top-0 left-0"
+      class="w-full z-10 top-0 left-0"
       src="https://res.cloudinary.com/dxzlnojyv/image/upload/v1694362627/h1_hero_hsqb3n.png"
       alt="baner"
     />
