@@ -32,8 +32,9 @@
             <div class="flex mt-3 mr-2">
               <img
                 class="w-14 mr-2"
-                src="https://res.cloudinary.com/dxzlnojyv/image/upload/v1694404673/cooker_sngbdk.png"
-                alt=""
+                height="64"
+                src="https://img.icons8.com/external-justicon-lineal-justicon/64/external-eating-thanksgiving-justicon-lineal-justicon.png"
+                alt="external-eating-thanksgiving-justicon-lineal-justicon"
               />
               <span>Ut enim ad minim veniam, quis nostrud exer.</span>
             </div>

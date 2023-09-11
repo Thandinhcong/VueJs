@@ -21,7 +21,9 @@
             class="px-20 py-5 outline-none"
             placeholder="Your Email..."
           />
-          <button class="px-10 bg-orange-500 text-white">Subcribe</button>
+          <button class="px-10 font-mono bg-orange-500 text-white">
+            Subcribe
+          </button>
         </form>
       </div>
     </div>
