@@ -3,12 +3,12 @@
     data-aos="fade-up"
     data-aos-duration="1000"
     data-aos-delay="300"
-    class="flex justify-center p-5 mt-24"
+    class="md:flex md:justify-center p-5 mt-24"
   >
-    <div class="flex items-center w-6/12">
+    <div class="flex items-center md:w-6/12">
       <div>
-        <p class="mb-5 text-xl text-orange-600">Discover Your Test</p>
-        <h3 class="mb-10 text-5xl mr-5">
+        <p class="mb-4 text-xl text-orange-600 mt-10">Discover Your Test</p>
+        <h3 class="mb-5 text-xl font-serif md:mb-10 md:text-5xl mr-5">
           We Provide Good Food For Your Family!
         </h3>
         <p class="mb-10 mr-10">
@@ -17,7 +17,7 @@
           quis nostrud exer.
         </p>
         <div>
-          <div class="grid grid-cols-2 mt-3 gap-3 mr-2">
+          <div class="md:grid mb-4 md:grid-cols-2 md:mt-3 md:gap-3 mr-2">
             <div class="flex">
               <img
                 class="w-14"

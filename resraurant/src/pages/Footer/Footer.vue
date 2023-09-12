@@ -8,12 +8,14 @@
     class="relative top-0 left-0"
   >
     <img
-      class="top-0 left-0 w-full z-20 h-[600px]"
+      class="top-0 left-0 h-[1100px] w-full sm:w-auto z-20 sm:h-[600px]"
       src="https://res.cloudinary.com/dxzlnojyv/image/upload/v1694406595/section_bg02_xc5onp.png"
       alt=""
     />
     <div class="absolute inset-0">
-      <div class="grid grid-cols-4 text-slate-50 w-full z-50 mt-20 p-2">
+      <div
+        class="sm:grid sm:grid-cols-4 text-slate-50 w-full z-50 my-10 md:mt-20 p-2"
+      >
         <img
           src="https://themewagon.github.io/allfood/assets/img/logo/logo2_footer.png"
           alt="logo"
@@ -81,7 +83,7 @@
         </div>
       </div>
       <div
-        class="flex justify-between px-5 py-5 items-center top-96 z-50 text-white mt-28"
+        class="md:flex md:justify-between px-5 py-5 md:items-center md:top-96 z-50 text-white md:mt-28"
       >
         <div>
           Copyright ©2023 All rights reserved | This template is made with by

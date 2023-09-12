@@ -3,13 +3,13 @@
     data-aos="fade-up"
     data-aos-duration="1000"
     data-aos-delay="300"
-    class="mb-20"
+    class="mb-20 mt-32 font-serif"
   >
     <div class="text-center my-10">
-      <p class="text-orange-500 text-xl">Servicees We Offer</p>
-      <h2 class="text-5xl py-10">Our Best Services</h2>
+      <p class="text-orange-500 md:text-xl">Servicees We Offer</p>
+      <h2 class="text-2xl md:text-5xl py-5 md:py-10">Our Best Services</h2>
     </div>
-    <div class="flex justify-between items-center gap-3 px-3">
+    <div class="sm:flex sm:justify-between items-center gap-3 px-3">
       <div class="mx-auto px-10 hover:bg-slate-100 py-16">
         <img
           class="mx-auto"
