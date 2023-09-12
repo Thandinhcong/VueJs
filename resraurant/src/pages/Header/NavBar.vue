@@ -14,7 +14,7 @@
         <router-link to="#">Blog</router-link>
       </li>
       <li class="hover:text-orange-500">
-        <router-link to="#">Contact</router-link>
+        <router-link to="/contacts">Contact</router-link>
       </li>
     </ul>
   </nav>
