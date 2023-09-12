@@ -20,17 +20,35 @@
         />
         <div>
           <p class="mb-10 font-serif text-xl">Home</p>
-          <p class="mb-5 hover:text-orange-500">Events</p>
-          <p class="mb-5 hover:text-orange-500">Testimonial</p>
-          <p class="mb-5 hover:text-orange-500">Categories</p>
-          <p class="mb-5 hover:text-orange-500">Contacts</p>
+          <router-link to="">
+            <p class="mb-5 hover:text-orange-500">Events</p></router-link
+          >
+          <router-link to=""
+            ><p class="mb-5 hover:text-orange-500">Testimonial</p></router-link
+          >
+          <router-link to="">
+            <p class="mb-5 hover:text-orange-500">Categories</p></router-link
+          >
+          <router-link to="/contacts">
+            <p class="mb-5 hover:text-orange-500">Contacts</p></router-link
+          >
         </div>
         <div>
           <p class="mb-10 font-serif text-xl">Useful Links</p>
-          <p class="mb-5 hover:text-orange-500">Registration</p>
-          <p class="mb-5 hover:text-orange-500">Login</p>
-          <p class="mb-5 hover:text-orange-500">Policy</p>
-          <p class="mb-5 hover:text-orange-500">Terms & Conditions</p>
+          <router-link to="">
+            <p class="mb-5 hover:text-orange-500">Registration</p></router-link
+          >
+          <router-link to="/login">
+            <p class="mb-5 hover:text-orange-500">Login</p></router-link
+          >
+          <router-link to="">
+            <p class="mb-5 hover:text-orange-500">Policy</p></router-link
+          >
+          <router-link to="">
+            <p class="mb-5 hover:text-orange-500">
+              Terms & Conditions
+            </p></router-link
+          >
         </div>
         <div>
           <p class="mb-10 font-serif text-xl">Instagram Feed</p>
