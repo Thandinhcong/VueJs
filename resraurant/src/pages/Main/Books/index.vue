@@ -1,7 +1,12 @@
 <script setup></script>
 
 <template>
-  <div class="w-full relative">
+  <div
+    data-aos="fade-up"
+    data-aos-duration="1000"
+    data-aos-delay="300"
+    class="w-full relative"
+  >
     <img
       class="w-full"
       src="https://res.cloudinary.com/dxzlnojyv/image/upload/v1694406595/section_bg04_ovhva8.png"

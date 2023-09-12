@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-  <div>
+  <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
     <div class="text-center group-[]:">
       <p class="text-orange-500 text-xl my-10">Our Offerd Menu</p>
       <h2 class="text-5xl mx-auto w-3/6 text-center">

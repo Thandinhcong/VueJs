@@ -1,6 +1,11 @@
 <template>
   <div class="relative z top-0 left-0 mt-20 w-full">
-    <div class="absolute inset-0 flex items-center pl-7">
+    <div
+      class="absolute inset-0 flex items-center pl-7"
+      data-aos="fade-left"
+      data-aos-duration="1000"
+      data-aos-delay="700"
+    >
       <div class="z-40 w-7/12">
         <h5 class="text-orange-500 text-2xl mb-16 font-thin">
           Khám phá đam mê ẩm thực trong bạn

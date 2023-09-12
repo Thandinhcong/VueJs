@@ -1,7 +1,12 @@
 <template>
   <div>
     <h2 class="text-2xl mb-10 font-serif">Get in Touch</h2>
-    <form action="">
+    <form
+      action=" "
+      data-aos="fade-right"
+      data-aos-duration="1000"
+      data-aos-delay="900"
+    >
       <textarea
         class="w-full border h-40 p-3 outline-none font-serif"
         placeholder="Enter Message"

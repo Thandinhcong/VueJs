@@ -1,5 +1,10 @@
 <template>
-  <div class="font-serif">
+  <div
+    data-aos="fade-left"
+    data-aos-duration="1000"
+    data-aos-delay="700"
+    class="font-serif"
+  >
     <div class="flex justify-between gap-6">
       <img
         width="40"

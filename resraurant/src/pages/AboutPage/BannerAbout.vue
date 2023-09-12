@@ -8,6 +8,7 @@
       alt=""
     />
     <p
+      data-aos="fade-right"
       class="absolute inset-0 top-0 left-0 text-5xl flex items-center font-serif ml-10"
     >
       About Us

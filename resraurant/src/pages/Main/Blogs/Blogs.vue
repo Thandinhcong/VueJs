@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
     <div class="text-center">
       <p class="text-orange-500 text-xl">Our New Blog News</p>
       <h2 class="font-serif text-5xl py-10">Our Recnet News</h2>

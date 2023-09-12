@@ -1,5 +1,10 @@
 <template>
-  <div class="mb-20">
+  <div
+    data-aos="fade-up"
+    data-aos-duration="1000"
+    data-aos-delay="300"
+    class="mb-20"
+  >
     <div class="text-center my-10">
       <p class="text-orange-500 text-xl">Servicees We Offer</p>
       <h2 class="text-5xl py-10">Our Best Services</h2>

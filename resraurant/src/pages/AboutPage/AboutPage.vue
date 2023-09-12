@@ -7,7 +7,7 @@
     <PreView />
     <About />
     <Services />
-    <Footer />
+    <Footer></Footer>
   </div>
 </template>
 <script setup>

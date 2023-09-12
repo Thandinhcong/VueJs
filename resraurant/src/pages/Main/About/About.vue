@@ -1,5 +1,10 @@
 <template>
-  <div class="relative">
+  <div
+    data-aos="fade-up"
+    data-aos-duration="1000"
+    data-aos-delay="300"
+    class="relative"
+  >
     <img
       class="w-full"
       src="https://res.cloudinary.com/dxzlnojyv/image/upload/v1694415914/section_bg03_pkxlkx.png"

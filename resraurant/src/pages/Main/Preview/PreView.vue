@@ -1,5 +1,10 @@
 <template>
-  <div class="flex justify-center p-5 mt-24">
+  <div
+    data-aos="fade-up"
+    data-aos-duration="1000"
+    data-aos-delay="300"
+    class="flex justify-center p-5 mt-24"
+  >
     <div class="flex items-center w-6/12">
       <div>
         <p class="mb-5 text-xl text-orange-600">Discover Your Test</p>

@@ -1,7 +1,12 @@
 <script setup>
 </script>
 <template>
-  <div class="relative top-0 left-0">
+  <div
+    data-aos="fade-up"
+    data-aos-duration="1000"
+    data-aos-delay="300"
+    class="relative top-0 left-0"
+  >
     <img
       class="top-0 left-0 w-full z-20 h-[600px]"
       src="https://res.cloudinary.com/dxzlnojyv/image/upload/v1694406595/section_bg02_xc5onp.png"
