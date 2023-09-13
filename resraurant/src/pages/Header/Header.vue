@@ -1,5 +1,7 @@
 <template>
-  <div class="fixed z-50 top-0 left-0 w-full h-28 bg-white border-x-stone-200">
+  <div
+    class="fixed z-50 top-0 left-0 w-full h-28 bg-slate-100 border-x-stone-200"
+  >
     <div class="flex justify-between p-5">
       <logo></logo>
       <nav-bar></nav-bar>

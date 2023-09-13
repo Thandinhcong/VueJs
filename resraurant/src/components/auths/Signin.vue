@@ -1,15 +1,16 @@
 <script setup>
 import Footer from "../../pages/Footer/Footer.vue";
-import Header from "../../pages/Header/Header.vue";
 import Logo from "../../pages/Header/Logo.vue";
 </script>
 <template>
   <div>
-    <logo></logo>
+    <logo
+      class="flex fixed p-5 z-50 top-0 left-0 w-full h-24 bg-slate-100 border-x-stone-200"
+    ></logo>
     <div
       class="my-10 mx-auto p-5 sm:w-full md:w-[600px] md:border lg:w-1/2 md:my-32"
     >
-      <h2 class="text-center text-2xl font-serif pt-5 sm:pt-10">
+      <h2 class="text-center text-2xl mt-10 font-serif pt-5 sm:pt-10">
         Đăng nhập tài khoản
       </h2>
       <form class="p-5 font-serif">

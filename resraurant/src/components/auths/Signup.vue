@@ -1,10 +1,12 @@
 <script setup>
 import Footer from "../../pages/Footer/Footer.vue";
-import Header from "../../pages/Header/Header.vue";
+import Logo from "../../pages/Header/Logo.vue";
 </script>
 <template>
   <div>
-    <Header></Header>
+    <Logo
+      class="flex fixed p-5 z-50 top-0 left-0 w-full h-28 bg-slate-100 border-x-stone-200"
+    />
     <div class="my-32 mx-auto sm:w-full sm:border md:w-[600px]">
       <h2 class="text-center text-2xl font-serif pt-10">Đăng ký tài khoản</h2>
       <form class="p-5 font-serif">
