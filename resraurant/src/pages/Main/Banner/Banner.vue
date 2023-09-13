@@ -20,10 +20,10 @@
           hoạt động nào ngoài việc anh ta có thể hưởng lợi từ nó theo một cách
           nào đó.
         </p>
-        <a
-          href=""
-          class="rounded-xl border border-solid border-orange-500 p-5 px-10 hover:text-white hover:bg-orange-600"
-          >Xem chi tiết</a
+        <router-link
+          to=""
+          class="rounded-xl border border-solid border-orange-500 py-4 md:p-5 px-10 hover:text-white hover:bg-orange-600"
+          >Xem chi tiết</router-link
         >
       </div>
     </div>

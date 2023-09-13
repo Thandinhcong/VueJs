@@ -11,7 +11,7 @@
         class="w-full border h-40 p-3 outline-none font-serif"
         placeholder="Enter Message"
       ></textarea>
-      <div class="flex justify-between gap-5">
+      <div class="md:flex md:justify-between gap-5">
         <input
           type="text"
           placeholder="Enter your name"
@@ -29,7 +29,7 @@
         class="border w-full my-6 py-3 p-3 outline-none font-serif"
       />
       <button
-        class="px-14 py-4 border border-solid rounded-md border-orange-500 hover:bg-orange-500 hover:text-white"
+        class="px-14 py-3 md:py-4 border border-solid rounded-md border-orange-500 hover:bg-orange-500 hover:text-white"
       >
         SEND
       </button>

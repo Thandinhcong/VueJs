@@ -3,7 +3,7 @@
     <div class="flex justify-between p-5">
       <logo></logo>
       <nav-bar></nav-bar>
-      <order-online></order-online>
+      <order-online class="hiden md:block"></order-online>
     </div>
   </div>
 </template>

@@ -8,7 +8,7 @@
     class="w-full relative font-serif"
   >
     <img
-      class="w-full h-[400px] md:h-full"
+      class="w-full h-[470px] md:h-full"
       src="https://res.cloudinary.com/dxzlnojyv/image/upload/v1694406595/section_bg04_ovhva8.png"
       alt="book a table"
     />

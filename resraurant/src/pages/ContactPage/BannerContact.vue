@@ -6,7 +6,7 @@
       alt=""
     />
     <p
-      class="absolute inset-0 top-0 left-0 text-5xl flex items-center font-serif ml-10"
+      class="absolute inset-0 top-0 left-0 text-2xl md:text-5xl flex items-center font-serif ml-10"
     >
       Contact Us
     </p>

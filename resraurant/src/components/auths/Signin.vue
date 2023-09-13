@@ -1,10 +1,11 @@
 <script setup>
 import Footer from "../../pages/Footer/Footer.vue";
 import Header from "../../pages/Header/Header.vue";
+import Logo from "../../pages/Header/Logo.vue";
 </script>
 <template>
   <div>
-    <Header></Header>
+    <logo></logo>
     <div
       class="my-10 mx-auto p-5 sm:w-full md:w-[600px] md:border lg:w-1/2 md:my-32"
     >
